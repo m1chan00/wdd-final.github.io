@@ -1,0 +1,145 @@
+body{
+    height: 900px;
+    width: 1440px;
+    overflow: hidden;
+    margin:0px;
+}
+
+h1{
+    font-family: 'Share Tech', sans-serif;
+    font-size: 90px;
+    color: #404040;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #c6f3f5;
+    margin: 0px;
+}
+
+.container-games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    height: 100%;
+    width: 100%;
+    background-color: #c6f3f5;
+    margin: 0px;
+}
+
+#Home{
+    animation: easeUp 1.3s ease-out 0s 1 forwards;
+}
+
+@keyframes easeUp{
+    0%{
+        transform: translateY(200px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+.button{
+    height: 83px;
+    width: 273px;
+    background: #00336F;
+    color: #FFFFFF;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 168px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 40px;
+}
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.zoomOut{
+    animation: zoom 1s ease-out 0s 1 forwards;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#bot-pix{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+#top-pix{
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.p5-button{
+    cursor: pointer;
+    left: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: #FF8585;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    animation: zoom 1.3s ease-in-out 0s 1 forwards;
+    margin: 60px;
+    
+}
+
+.p5-button:hover{
+    height: 350px;
+    width: 350px;
+    transition: 1s;
+}
+
+.acnh-button{
+    cursor: pointer;
+    left: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: #ACEFB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    animation: zoom 1.3s ease-in-out 0s 1 forwards;
+    margin: 60px;
+}
+
+.acnh-button:hover{
+    height: 350px;
+    width: 350px;
+    transition: 1s;
+}

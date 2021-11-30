@@ -1,0 +1,106 @@
+body{
+    height: 900px;
+    width: 1440px;
+    overflow: hidden;
+    margin:0px;
+}
+
+#carousel,
+.carousel-item {
+    height: 900px;
+    width: 1440px;
+    background-color: #FF8585;
+}
+
+#carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+#carousel-controls{
+    background-color: #FF8585;
+}
+
+button{
+    background-color: #FF8585;
+    border: none;
+    cursor: pointer;
+}
+
+#carousel-image-row {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0px;
+    transition: 0.5s left;
+  
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FF8585;
+    margin: 0px;
+    height: 900px;
+    width: 1440px;
+}
+
+#p5-img{
+    position: absolute;
+    width: 350px;
+    top: 200px;
+}
+
+#controller{
+    position: absolute; 
+    bottom: -70px;
+    animation: controllerRise 1.5s ease-out 0s 1 forwards;
+}
+
+@keyframes controllerRise{
+    0%{
+        transform: translateY(400px);
+    }
+    100%{
+        transform: translateY(-60px);
+    }
+}
+
+#left-button{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+}
+
+#right-button{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 40px;
+}
+
+#home{
+    height: 83px;
+    width: 273px;
+    background: #5E0000;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 168px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
